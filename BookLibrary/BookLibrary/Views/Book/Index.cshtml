@@ -1,0 +1,29 @@
+﻿@model List<Book>
+
+@{
+    ViewData["Title"] = "Books";
+}
+
+<div class="container">
+    <br />
+    <a asp-action="Create" asp-controller="Pizza" class="btn btn-primary">Add Book</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>BOOK</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (var book in Model)
+                {
+                    var imagePath = $"./images/{book.Name}1.jpg";
+                        <tr>
+                            <td><img src="@imagePath" width="100" height="170" /> @book.Name</td>
+                            <td><a asp-action="Details" asp-controller="Book" asp-route-id="@book.Id">Details</a> | <a asp-action="Edit" asp-controller="Book" asp-route-id="@book.Id">Edit</a> | <a>Delete</a></td>
+                        </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
