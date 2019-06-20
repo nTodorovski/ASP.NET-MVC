@@ -1,0 +1,89 @@
+﻿@model BookLibrary.Models.User
+@{
+    ViewData["Title"] = "UserProfile";
+
+}
+
+<h2>My Account</h2>
+<hr />
+<dl class="dl-horizontal">
+    <dt>
+        @Html.DisplayNameFor(model => model.Email)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Email)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.Password)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Password) 
+        <a asp-action="ChangePassword" asp-controller="User" asp-route-id="@Model.Id">Change Password</a>
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.Role.Name)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Role.Name)
+    </dd>
+</dl>
+<a asp-action="LoanBooks" asp-controller="Loan" asp-route-id="@Model.Id" class="btn btn-primary">Loan Book</a>
+<a asp-action="LogOut" asp-controller="User" asp-route-id="@Model.Id" class="btn btn-danger">Log Out</a>
+<br />
+<br />
+<h2><span class="badge badge-success">Active Loans</span></h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Book</th>
+            <th>Loan Date</th>
+            <th>Date You Need To Return</th>
+            <th>Date Returned</th>
+            <th>Status</th>
+            <th>Return Book</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var loan in ViewBag.ActiveLoans)
+            {
+                <tr>
+                    <td>@loan.Book.Name</td>
+                    <td>@loan.LoanDate.ToString()</td>
+                    <td>@loan.LoanDate.AddDays(30).ToString()</td>
+                    <td>@loan.DateReturned</td>
+                    <td>@loan.Status.ToString()</td>
+                    <td><a asp-action="ReturnBook" asp-controller="Loan" asp-route-id="@loan.Id">Return Book</a></td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<br />
+<br />
+<h2><span class="badge badge-success">Past Loans</span></h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Book</th>
+            <th>Loan Date</th>
+            <th>Date Returned</th>
+            <th>Status</th>
+            <th>Fine Paid</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var loan in ViewBag.PastLoans)
+            {
+                <tr>
+                    <td>@loan.Book.Name</td>
+                    <td>@loan.LoanDate.ToString()</td>
+                    <td>@loan.DateReturned</td>
+                    <td>@loan.Status.ToString()</td>
+                    <td>@loan.FinePaid</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

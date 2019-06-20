@@ -1,9 +1,6 @@
 ﻿using BookLibrary.Models;
 using BookLibrary.ViewModels;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace BookLibrary.Services
 {
@@ -12,9 +9,9 @@ namespace BookLibrary.Services
         List<Book> ListAllBooks();
         Book GetBookById(int id);
         Book ChangeToModel(EditBookViewModel model);
-        void CreateNewBook(Book book);
         void UpdateExistingBook(Book book);
-        void DeleteExistingBook(Book book);
+        void Delete(int id);
         void AddListItemToBook(EditBookViewModel book);
+        void Create(EditBookViewModel model);
     }
 }

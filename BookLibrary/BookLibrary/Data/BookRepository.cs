@@ -1,8 +1,6 @@
-﻿using System;
+﻿using BookLibrary.Models;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using BookLibrary.Models;
 
 namespace BookLibrary.Data
 {

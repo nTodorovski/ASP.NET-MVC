@@ -31,7 +31,11 @@ namespace BookLibrary.Data
         public void UpdateExisting(Loan loan)
         {
             var foundLoan= Storage.Loans.FirstOrDefault(x => x.Id == loan.Id);
-            foundLoan = loan;
+            foundLoan.Book = loan.Book;
+            foundLoan.DateReturned = loan.DateReturned;
+            foundLoan.FinePaid = loan.FinePaid;
+            foundLoan.Status = loan.Status;
+            foundLoan.User = loan.User;
         }
     }
 }

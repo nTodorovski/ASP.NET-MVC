@@ -30,3 +30,10 @@ C:\Users\Nikola\source\repos\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\Boo
 C:\Users\Nikola\source\repos\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Book\Index.g.cshtml.cs
 C:\Users\Nikola\source\repos\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Book\Details.g.cshtml.cs
 C:\Users\Nikola\source\repos\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Book\Edit.g.cshtml.cs
+C:\Users\Nikola\source\repos\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Book\Create.g.cshtml.cs
+C:\Users\Nikola\source\repos\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\Razor\Views\User\LogIn.g.cshtml.cs
+C:\Users\Nikola\source\repos\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\Razor\Views\User\ShowUser.g.cshtml.cs
+C:\Users\Nikola\source\repos\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\Razor\Views\User\ChangePassword.g.cshtml.cs
+C:\Users\Nikola\source\repos\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Loan\LoanBooks.g.cshtml.cs
+C:\Users\Nikola\source\repos\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Loan\Index.g.cshtml.cs
+C:\Users\Nikola\source\repos\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Author\Index.g.cshtml.cs

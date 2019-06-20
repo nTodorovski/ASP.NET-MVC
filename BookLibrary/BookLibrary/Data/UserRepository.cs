@@ -31,7 +31,10 @@ namespace BookLibrary.Data
         public void UpdateExisting(User user)
         {
             var foundUser = Storage.Users.FirstOrDefault(x => x.Id == user.Id);
-            foundUser = user;
+            foundUser.Email = user.Email;
+            foundUser.Password = user.Password;
+            foundUser.Role = user.Role;
+            foundUser.IsLogged = user.IsLogged;
         }
     }
 }

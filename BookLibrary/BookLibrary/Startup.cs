@@ -32,6 +32,10 @@ namespace BookLibrary
             services.AddTransient<ILoanRepository, LoanRepository>();
 
             services.AddTransient<IBookService, BookService>();
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<ILoanService, LoanService>();
+            services.AddTransient<IAuthorService, AuthorService>();
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

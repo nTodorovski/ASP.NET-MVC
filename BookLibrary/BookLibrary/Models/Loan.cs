@@ -10,9 +10,10 @@ namespace BookLibrary.Models
         public int Id { get; set; }
         public Book Book { get; set; }
         public User User { get; set; }
-
         public DateTime LoanDate { get; set; }
+        public DateTime DateReturned { get; set; }
         public LoanStatusEnum Status { get; set; }
+        public int FinePaid { get; set; }
 
         public Loan(int id, Book book, User user, DateTime loanDate)
         {
@@ -23,18 +24,9 @@ namespace BookLibrary.Models
             Status = LoanStatusEnum.Active;
         }
 
-        public int ReturnBook()
+        public Loan()
         {
-            int PenaltyPerDay = 30;
-            int fine = 0;
-            Status = LoanStatusEnum.Finished;
-            TimeSpan t = LoanDate - DateTime.Now;
-            if (t.Days > 30)
-            {
-                fine = (t.Days - 30) * PenaltyPerDay;
-            }
 
-            return fine;
         }
     }
 }

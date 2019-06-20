@@ -6,6 +6,7 @@
         public string Email { get; set; }
         public string Password { get; set; }
         public Role Role { get; set; }
+        public bool IsLogged { get; set; }
 
         public User(int id, string email, string password, Role role)
         {
@@ -13,6 +14,12 @@
             Email = email;
             Password = password;
             Role = role;
+            IsLogged = false;
+        }
+
+        public User()
+        {
+
         }
     }
 }

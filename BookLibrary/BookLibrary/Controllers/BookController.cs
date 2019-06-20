@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using BookLibrary.Data;
-using BookLibrary.Models;
+﻿using BookLibrary.Models;
 using BookLibrary.Services;
 using BookLibrary.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -21,6 +16,25 @@ namespace BookLibrary.Controllers
         {
             var books = _bookService.ListAllBooks();
             return View(books);
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            var book = new EditBookViewModel();
+            _bookService.AddListItemToBook(book);
+            return View(book);
+        }
+
+        [HttpPost]
+        public IActionResult Create(EditBookViewModel editBook)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(editBook);
+            }
+            _bookService.Create(editBook);
+            return RedirectToAction("Index", "Book");
         }
 
         public IActionResult Details(int id)
@@ -57,6 +71,13 @@ namespace BookLibrary.Controllers
 
             Book newBook = _bookService.ChangeToModel(model);
             _bookService.UpdateExistingBook(newBook);
+            return RedirectToAction("Index", "Book");
+        }
+
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            _bookService.Delete(id);
             return RedirectToAction("Index", "Book");
         }
     }

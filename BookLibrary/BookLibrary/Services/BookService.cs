@@ -19,13 +19,9 @@ namespace BookLibrary.Services
             _bookRepository = bookRepository;
         }
 
-        public void CreateNewBook(Book book)
+        public void Delete(int id)
         {
-            _bookRepository.CreateNew(book);
-        }
-
-        public void DeleteExistingBook(Book book)
-        {
+            var book = GetBookById(id);
             _bookRepository.DeleteExisting(book);
         }
 
@@ -46,7 +42,7 @@ namespace BookLibrary.Services
 
         public Book ChangeToModel(EditBookViewModel model)
         {
-            var author = Storage.Authors.FirstOrDefault(x => x.Id == model.Author);
+            var author = Storage.Authors.FirstOrDefault(x => x.Id.ToString() == model.Author);
             GenreEnum genre = (GenreEnum)Enum.Parse(typeof(GenreEnum), model.Genre);
 
             Book newBook = new Book();
@@ -59,6 +55,24 @@ namespace BookLibrary.Services
             newBook.Genre = genre;
 
             return newBook;
+        }
+
+        public void Create(EditBookViewModel model)
+        {
+            int nextId = Storage.Books.Last().Id + 1;
+            var author = Storage.Authors.FirstOrDefault(x => x.Id == int.Parse(model.Author));
+            GenreEnum genre = (GenreEnum)Enum.Parse(typeof(GenreEnum), model.Genre);
+
+            Book newBook = new Book();
+            newBook.Id = nextId;
+            newBook.Isbn = model.Isbn;
+            newBook.Name = model.Name;
+            newBook.Pages = model.Pages;
+            newBook.Author = author;
+            newBook.Quantity = model.Quantity;
+            newBook.Genre = genre;
+
+            _bookRepository.CreateNew(newBook);
         }
 
         public void AddListItemToBook(EditBookViewModel book)
@@ -105,24 +119,5 @@ namespace BookLibrary.Services
                 }
             }
         }
-        //public void LoanBook(Book book)
-        //{
-
-        //}
-
-        //public int ReturnBook(Loan loan)
-        //{
-        //    int PenaltyPerDay = 30;
-        //    int fine = 0;
-
-        //    loan.Status = LoanStatusEnum.Finished;
-        //    TimeSpan t = loan.LoanDate - DateTime.Now;
-        //    if (t.Days > 30)
-        //    {
-        //        fine = (t.Days - 30) * PenaltyPerDay;
-        //    }
-
-        //    return fine;
-        //}
     }
 }
