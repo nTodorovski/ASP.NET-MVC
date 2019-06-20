@@ -31,7 +31,9 @@ namespace BookLibrary.Data
         public void UpdateExisting(Author author)
         {
             var foundAuthor = Storage.Authors.FirstOrDefault(x => x.Id == author.Id);
-            foundAuthor = author;
+            foundAuthor.Age = author.Age;
+            foundAuthor.FirstName = author.FirstName;
+            foundAuthor.LastName = author.LastName;
         }
     }
 }

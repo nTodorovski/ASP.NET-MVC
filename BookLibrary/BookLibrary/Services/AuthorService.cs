@@ -25,7 +25,7 @@ namespace BookLibrary.Services
             _authorRepository.DeleteExisting(author);
         }
 
-        public Author GetItemDetails(int id)
+        public Author GetAuthorById(int id)
         {
             return _authorRepository.GetItemDetails(id);
         }
@@ -35,9 +35,16 @@ namespace BookLibrary.Services
             return _authorRepository.ListAll();
         }
 
-        public void UpdateExisting(Author author)
+        public void UpdateExistingAuthor(Author author)
         {
             _authorRepository.UpdateExisting(author);
+        }
+
+        public void CreateAuthor(Author author)
+        {
+            int nextId = Storage.Authors.Last().Id + 1;
+            author.Id = nextId;
+            _authorRepository.CreateNew(author);
         }
     }
 }

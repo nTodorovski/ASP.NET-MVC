@@ -37,3 +37,6 @@ C:\Users\Nikola\source\repos\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\Raz
 C:\Users\Nikola\source\repos\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Loan\LoanBooks.g.cshtml.cs
 C:\Users\Nikola\source\repos\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Loan\Index.g.cshtml.cs
 C:\Users\Nikola\source\repos\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Author\Index.g.cshtml.cs
+C:\Users\Nikola\source\repos\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Author\Details.g.cshtml.cs
+C:\Users\Nikola\source\repos\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Author\Create.g.cshtml.cs
+C:\Users\Nikola\source\repos\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Author\Edit.g.cshtml.cs

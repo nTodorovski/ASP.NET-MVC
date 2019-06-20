@@ -1,0 +1,46 @@
+﻿@model  BookLibrary.Models.Author
+@{
+    ViewData["Title"] = "Details";
+}
+
+    <div>
+        <h4>AuthorDetails</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.FirstName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.LastName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.LastName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Age)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Age)
+            </dd>
+            <dt>
+                Books
+            </dt>
+            <dd>
+                <ol>
+                    @{
+                        foreach (var book in ViewBag.AuthorBooks)
+                        {
+                           <li>@book.Name</li>
+                        }
+                    }
+                </ol>
+            </dd>
+        </dl>
+        <a asp-action="Index" asp-controller="Author" class="btn btn-primary">Back</a>
+    </div>
+
+
+

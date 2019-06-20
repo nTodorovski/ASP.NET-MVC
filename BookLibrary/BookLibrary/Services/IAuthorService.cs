@@ -9,9 +9,10 @@ namespace BookLibrary.Services
     public interface IAuthorService
     {
         List<Author> ListAll();
-        Author GetItemDetails(int id);
+        Author GetAuthorById(int id);
         void CreateNew(Author author);
-        void UpdateExisting(Author author);
+        void UpdateExistingAuthor(Author author);
         void DeleteExisting(Author author);
+        void CreateAuthor(Author author);
     }
 }
