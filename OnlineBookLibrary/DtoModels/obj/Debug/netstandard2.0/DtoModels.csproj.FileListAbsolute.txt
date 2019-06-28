@@ -1,0 +1,9 @@
+C:\Users\Nikola\source\repos\OnlineBookLibrary\DtoModels\bin\Debug\netstandard2.0\DtoModels.deps.json
+C:\Users\Nikola\source\repos\OnlineBookLibrary\DtoModels\bin\Debug\netstandard2.0\DtoModels.dll
+C:\Users\Nikola\source\repos\OnlineBookLibrary\DtoModels\bin\Debug\netstandard2.0\DtoModels.pdb
+C:\Users\Nikola\source\repos\OnlineBookLibrary\DtoModels\obj\Debug\netstandard2.0\DtoModels.csprojAssemblyReference.cache
+C:\Users\Nikola\source\repos\OnlineBookLibrary\DtoModels\obj\Debug\netstandard2.0\DtoModels.csproj.CoreCompileInputs.cache
+C:\Users\Nikola\source\repos\OnlineBookLibrary\DtoModels\obj\Debug\netstandard2.0\DtoModels.AssemblyInfoInputs.cache
+C:\Users\Nikola\source\repos\OnlineBookLibrary\DtoModels\obj\Debug\netstandard2.0\DtoModels.AssemblyInfo.cs
+C:\Users\Nikola\source\repos\OnlineBookLibrary\DtoModels\obj\Debug\netstandard2.0\DtoModels.dll
+C:\Users\Nikola\source\repos\OnlineBookLibrary\DtoModels\obj\Debug\netstandard2.0\DtoModels.pdb

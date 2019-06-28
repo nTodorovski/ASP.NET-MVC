@@ -1,0 +1,37 @@
+﻿@model  ViewModels.LoanListViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Loans</h2>
+<br>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Book</th>
+            <th>UserName</th>
+            <th>Date Loaned</th>
+            <th>Date Returned</th>
+            <th>Status</th>
+            <th>Fine Paid</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{ 
+            foreach (var loan in Model.AllLoans)
+            {
+                <tr>
+                    <td>@loan.Id</td>
+                    <td>@loan.Book.Name</td>
+                    <td>@loan.User.Email</td>
+                    <td>@loan.LoanDate</td>
+                    <td>@loan.DateReturned</td>
+                    <td>@loan.Status</td>
+                    <td>@loan.FinePaid</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

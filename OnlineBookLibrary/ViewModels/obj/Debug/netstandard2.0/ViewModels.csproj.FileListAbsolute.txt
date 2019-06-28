@@ -1,0 +1,14 @@
+C:\Users\Nikola\source\repos\OnlineBookLibrary\ViewModels\bin\Debug\netstandard2.0\ViewModels.deps.json
+C:\Users\Nikola\source\repos\OnlineBookLibrary\ViewModels\bin\Debug\netstandard2.0\ViewModels.dll
+C:\Users\Nikola\source\repos\OnlineBookLibrary\ViewModels\obj\Debug\netstandard2.0\ViewModels.csprojAssemblyReference.cache
+C:\Users\Nikola\source\repos\OnlineBookLibrary\ViewModels\obj\Debug\netstandard2.0\ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\Nikola\source\repos\OnlineBookLibrary\ViewModels\obj\Debug\netstandard2.0\ViewModels.AssemblyInfoInputs.cache
+C:\Users\Nikola\source\repos\OnlineBookLibrary\ViewModels\obj\Debug\netstandard2.0\ViewModels.AssemblyInfo.cs
+C:\Users\Nikola\source\repos\OnlineBookLibrary\ViewModels\bin\Debug\netstandard2.0\ViewModels.pdb
+C:\Users\Nikola\source\repos\OnlineBookLibrary\ViewModels\bin\Debug\netstandard2.0\DataLayer.dll
+C:\Users\Nikola\source\repos\OnlineBookLibrary\ViewModels\bin\Debug\netstandard2.0\DtoModels.dll
+C:\Users\Nikola\source\repos\OnlineBookLibrary\ViewModels\bin\Debug\netstandard2.0\DataLayer.pdb
+C:\Users\Nikola\source\repos\OnlineBookLibrary\ViewModels\bin\Debug\netstandard2.0\DtoModels.pdb
+C:\Users\Nikola\source\repos\OnlineBookLibrary\ViewModels\obj\Debug\netstandard2.0\ViewModels.csproj.CopyComplete
+C:\Users\Nikola\source\repos\OnlineBookLibrary\ViewModels\obj\Debug\netstandard2.0\ViewModels.dll
+C:\Users\Nikola\source\repos\OnlineBookLibrary\ViewModels\obj\Debug\netstandard2.0\ViewModels.pdb
