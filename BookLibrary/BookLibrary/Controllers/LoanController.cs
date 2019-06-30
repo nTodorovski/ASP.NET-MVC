@@ -61,6 +61,5 @@ namespace BookLibrary.Controllers
             _loanService.ReturnBook(id);
             return RedirectToAction("LogIn", "User");
         }
-
     }
 }

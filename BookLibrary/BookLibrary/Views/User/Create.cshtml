@@ -1,29 +1,25 @@
-﻿@model BookLibrary.ViewModels.UserViewModel
+﻿@model  BookLibrary.ViewModels.UserViewModel
 @{
-    ViewData["Title"] = "LogIn";
+    ViewData["Title"] = "Create";
 }
 
+<h2>Register</h2>
+
 <div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-4">
-        <form asp-action="ShowUser" asp-controller="User">
-            <h2 class="text-center">Log in</h2>
+    <div class="col-md-6">
+        <form asp-action="Create" asp-controller="User">
             <div class="form-group">
                 <label asp-for="Email" class="control-label"></label>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
-                @Html.ValidationMessage("CustomError", new { @class = "text-danger" })
             </div>
             <div class="form-group">
                 <label asp-for="Password" class="control-label"></label>
                 <input asp-for="Password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Log In" class="btn btn-primary btn-block" />
-            </div>
+            <input type="submit" value="Create" class="btn btn-primary" />
         </form>
     </div>
-    <div class="col-md-4"></div>
 </div>
 

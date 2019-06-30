@@ -82,3 +82,4 @@ C:\Users\Nikola\Desktop\ASP.NET-MVC\BookLibrary\BookLibrary\obj\Debug\netcoreapp
 C:\Users\Nikola\Desktop\ASP.NET-MVC\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\BookLibrary.dll
 C:\Users\Nikola\Desktop\ASP.NET-MVC\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\BookLibrary.pdb
 C:\Users\Nikola\Desktop\ASP.NET-MVC\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\BookLibrary.csproj.CopyComplete
+C:\Users\Nikola\Desktop\ASP.NET-MVC\BookLibrary\BookLibrary\obj\Debug\netcoreapp2.1\Razor\Views\User\Create.g.cshtml.cs

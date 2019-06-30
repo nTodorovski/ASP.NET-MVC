@@ -16,5 +16,6 @@ namespace BookLibrary.Services
         User FindUserByEmail(string email);
         bool CheckIfSomeoneIsLogged();
         User FindLoggedUser();
+        void RegisterUser(UserViewModel model);
     }
 }

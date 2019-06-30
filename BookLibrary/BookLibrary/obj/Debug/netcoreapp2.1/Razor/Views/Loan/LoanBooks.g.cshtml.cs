@@ -68,17 +68,17 @@ using BookLibrary.Models;
             WriteLiteral("\r\n<h2>Select Book</h2>\r\n<div class=\"container\">\r\n    ");
             EndContext();
             BeginContext(143, 286, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d15cdf77490f4d8eb469c97a0f779fb2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a2c8afb02515405a8eaf147f11a2bf50", async() => {
                 BeginContext(194, 10, true);
                 WriteLiteral("\r\n        ");
                 EndContext();
                 BeginContext(204, 142, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76a1d88c50274d4f9f52cfcd76da2f81", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "93e7d8ee2f104f05836ba6aea9eba7d8", async() => {
                     BeginContext(260, 14, true);
                     WriteLiteral("\r\n            ");
                     EndContext();
                     BeginContext(274, 53, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7e7c761b1ff74775807762625714576b", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8b3ca6bc3af64caebd105a44e7d2d591", async() => {
                         BeginContext(300, 18, true);
                         WriteLiteral("Please select book");
                         EndContext();
@@ -152,7 +152,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items = Model.Books;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(435, 75, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "24723c1aba384381955ff5acd59d1a3d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "20cc99d79e144b7ab1a04b887499c300", async() => {
                 BeginContext(502, 4, true);
                 WriteLiteral("Back");
                 EndContext();

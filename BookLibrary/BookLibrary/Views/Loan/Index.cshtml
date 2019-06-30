@@ -2,7 +2,6 @@
 @{
     ViewData["Title"] = "Index";
 }
-
 <h2>Loans</h2>
 <br>
 
@@ -21,7 +20,7 @@
     <tbody>
         @{ 
             foreach (var loan in Model.AllLoans)
-            {
+            {   
                 <tr>
                     <td>@loan.Id</td>
                     <td>@loan.Book.Name</td>

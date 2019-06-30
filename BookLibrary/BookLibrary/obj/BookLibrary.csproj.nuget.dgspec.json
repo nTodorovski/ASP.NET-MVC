@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nikola\\source\\repos\\BookLibrary\\BookLibrary\\BookLibrary.csproj": {}
+    "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\BookLibrary\\BookLibrary\\BookLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nikola\\source\\repos\\BookLibrary\\BookLibrary\\BookLibrary.csproj": {
+    "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\BookLibrary\\BookLibrary\\BookLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nikola\\source\\repos\\BookLibrary\\BookLibrary\\BookLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\BookLibrary\\BookLibrary\\BookLibrary.csproj",
         "projectName": "BookLibrary",
-        "projectPath": "C:\\Users\\Nikola\\source\\repos\\BookLibrary\\BookLibrary\\BookLibrary.csproj",
+        "projectPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\BookLibrary\\BookLibrary\\BookLibrary.csproj",
         "packagesPath": "C:\\Users\\Nikola\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nikola\\source\\repos\\BookLibrary\\BookLibrary\\obj\\",
+        "outputPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\BookLibrary\\BookLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -53,6 +53,7 @@
               "version": "[2.1.2, )"
             },
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true

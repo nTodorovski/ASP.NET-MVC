@@ -108,7 +108,7 @@ using BookLibrary.Models;
             WriteLiteral(" \r\n        ");
             EndContext();
             BeginContext(428, 97, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c8ca8c85ff8d4e32bbd31d8f886c5460", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b0cda6bc7ec406c8bc6d1f6e4fb59c9", async() => {
                 BeginContext(506, 15, true);
                 WriteLiteral("Change Password");
                 EndContext();
@@ -165,7 +165,7 @@ using BookLibrary.Models;
             WriteLiteral("\r\n    </dd>\r\n</dl>\r\n");
             EndContext();
             BeginContext(695, 110, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a69893d7cf754bcfa9d3989054944698", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "90edb8e48e62471a96623c5e912f3b18", async() => {
                 BeginContext(792, 9, true);
                 WriteLiteral("Loan Book");
                 EndContext();
@@ -203,7 +203,7 @@ using BookLibrary.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(807, 104, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cf80d6f5641046fda51c995686d73700", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0f50bbd1ca52442ab363a42066c96386", async() => {
                 BeginContext(900, 7, true);
                 WriteLiteral("Log Out");
                 EndContext();
@@ -317,7 +317,7 @@ using BookLibrary.Models;
             WriteLiteral("</td>\r\n                    <td>");
             EndContext();
             BeginContext(1690, 88, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "abc4008cf54b46f1b3fe6e4094337da8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31b4b28519e74e82aea34ec00db0e0fc", async() => {
                 BeginContext(1763, 11, true);
                 WriteLiteral("Return Book");
                 EndContext();

@@ -72,5 +72,24 @@ namespace BookLibrary.Controllers
             _userService.UpdateExisting(user);
             return View("ShowUser",user);
         }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            var user = new UserViewModel();
+            return View(user);
+        }
+
+        [HttpPost]
+        public IActionResult Create(UserViewModel model)
+        {
+            var loggedUser = _userService.FindLoggedUser();
+            _userService.RegisterUser(model);
+            if(loggedUser != null)
+            {
+                return RedirectToAction("LogOut", new { id = loggedUser.Id });
+            }
+            return RedirectToAction("LogIn");
+        }
     }
 }

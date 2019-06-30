@@ -72,5 +72,14 @@ namespace BookLibrary.Services
             var loggedUser = Storage.Users.Find(x => x.IsLogged == true);
             return loggedUser;
         }
+
+        public void RegisterUser(UserViewModel model)
+        {
+            int nextId = Storage.Users.Max(x => x.Id) + 1;
+            var user = ChangeToModel(model);
+            user.Role = new Role(1, "User");
+            user.Id = nextId;
+            Create(user);
+        }
     }
 }
