@@ -4988,11 +4988,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nikola\\source\\repos\\OnlineBookLibrary\\BusinessLayer\\BusinessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\BusinessLayer\\BusinessLayer.csproj",
       "projectName": "BusinessLayer",
-      "projectPath": "C:\\Users\\Nikola\\source\\repos\\OnlineBookLibrary\\BusinessLayer\\BusinessLayer.csproj",
+      "projectPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\BusinessLayer\\BusinessLayer.csproj",
       "packagesPath": "C:\\Users\\Nikola\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nikola\\source\\repos\\OnlineBookLibrary\\BusinessLayer\\obj\\",
+      "outputPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\BusinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5011,14 +5011,14 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Nikola\\source\\repos\\OnlineBookLibrary\\DataLayer\\DataLayer.csproj": {
-              "projectPath": "C:\\Users\\Nikola\\source\\repos\\OnlineBookLibrary\\DataLayer\\DataLayer.csproj"
+            "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DataLayer\\DataLayer.csproj": {
+              "projectPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DataLayer\\DataLayer.csproj"
             },
-            "C:\\Users\\Nikola\\source\\repos\\OnlineBookLibrary\\DtoModels\\DtoModels.csproj": {
-              "projectPath": "C:\\Users\\Nikola\\source\\repos\\OnlineBookLibrary\\DtoModels\\DtoModels.csproj"
+            "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DtoModels\\DtoModels.csproj": {
+              "projectPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DtoModels\\DtoModels.csproj"
             },
-            "C:\\Users\\Nikola\\source\\repos\\OnlineBookLibrary\\ViewModels\\ViewModels.csproj": {
-              "projectPath": "C:\\Users\\Nikola\\source\\repos\\OnlineBookLibrary\\ViewModels\\ViewModels.csproj"
+            "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\ViewModels\\ViewModels.csproj": {
+              "projectPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\ViewModels\\ViewModels.csproj"
             }
           }
         }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using BusinessLayer;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using ViewModels;
 
 namespace OnlineBookLibrary.Controllers
@@ -23,6 +24,7 @@ namespace OnlineBookLibrary.Controllers
         public IActionResult Index()
         {
             var loans = new LoanListViewModel();
+            loans.AllLoans = _loanService.ListAllLoans();
             return View(loans);
         }
 
@@ -30,6 +32,14 @@ namespace OnlineBookLibrary.Controllers
         public IActionResult LoanBooks()
         {
             var loan = new LoanViewModel();
+            foreach (var book in _bookService.ListAllBooks())
+            {
+                loan.Books.Add(new SelectListItem
+                {
+                    Text = book.Name,
+                    Value = book.Id.ToString()
+                });
+            }
             return View(loan);
         }
 

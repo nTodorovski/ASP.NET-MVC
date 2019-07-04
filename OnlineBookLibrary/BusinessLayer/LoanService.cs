@@ -44,6 +44,8 @@ namespace BusinessLayer
             loan.User = user;
             loan.Status = LoanStatusEnum.Active;
             loan.LoanDate = DateTime.Now;
+            user.Loans.Add(loan);
+            _userService.UpdateExisting(user);
             _loanRepository.Create(loan);
         }
 

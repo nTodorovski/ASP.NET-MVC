@@ -45,16 +45,19 @@
     </thead>
     <tbody>
         @{
-            foreach (var loan in ViewBag.ActiveLoans)
+            if (Model.Loans != null)
             {
-                <tr>
-                    <td>@loan.Book.Name</td>
-                    <td>@loan.LoanDate.ToString()</td>
-                    <td>@loan.LoanDate.AddDays(30).ToString()</td>
-                    <td>@loan.DateReturned</td>
-                    <td>@loan.Status.ToString()</td>
-                    <td><a asp-action="ReturnBook" asp-controller="Loan" asp-route-id="@loan.Id">Return Book</a></td>
-                </tr>
+                foreach (var loan in Model.Loans.Where(x => x.Status == DtoModels.LoanStatusEnum.Active))
+                {
+                    <tr>
+                        <td>@loan.Book.Name</td>
+                        <td>@loan.LoanDate.ToString()</td>
+                        <td>@loan.LoanDate.AddDays(30).ToString()</td>
+                        <td>@loan.DateReturned</td>
+                        <td>@loan.Status.ToString()</td>
+                        <td><a asp-action="ReturnBook" asp-controller="Loan" asp-route-id="@loan.Id">Return Book</a></td>
+                    </tr>
+                }
             }
         }
     </tbody>
@@ -74,15 +77,19 @@
     </thead>
     <tbody>
         @{
-            foreach (var loan in ViewBag.PastLoans)
+            if (Model.Loans != null)
             {
-                <tr>
-                    <td>@loan.Book.Name</td>
-                    <td>@loan.LoanDate.ToString()</td>
-                    <td>@loan.DateReturned</td>
-                    <td>@loan.Status.ToString()</td>
-                    <td>@loan.FinePaid</td>
-                </tr>
+                foreach (var loan in Model.Loans.Where(x => x.Status == DtoModels.LoanStatusEnum.Finished))
+                {
+                    <tr>
+                        <td>@loan.Book.Name</td>
+                        <td>@loan.LoanDate.ToString()</td>
+                        <td>@loan.LoanDate.AddDays(30).ToString()</td>
+                        <td>@loan.DateReturned</td>
+                        <td>@loan.Status.ToString()</td>
+                        <td><a asp-action="ReturnBook" asp-controller="Loan" asp-route-id="@loan.Id">Return Book</a></td>
+                    </tr>
+                }
             }
         }
     </tbody>

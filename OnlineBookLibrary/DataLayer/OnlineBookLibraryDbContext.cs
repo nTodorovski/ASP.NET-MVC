@@ -30,6 +30,12 @@ namespace DataLayer
                 .WithMany(x => x.Users)
                 .HasForeignKey(x => x.RoleId);
 
+            modelBuilder.Entity<User>()
+                .HasMany(x => x.Loans)
+                .WithOne(x => x.User)
+                .HasForeignKey(x => x.UserId);
+
+            
             #region Seed
             var authors = new List<Author>
             {

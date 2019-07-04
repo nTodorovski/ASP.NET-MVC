@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataLayer.Migrations
 {
     [DbContext(typeof(OnlineBookLibraryDbContext))]
-    [Migration("20190628094916_Init")]
-    partial class Init
+    [Migration("20190704110122_WIthLoans")]
+    partial class WIthLoans
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -283,7 +283,7 @@ namespace DataLayer.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("DtoModels.User", "User")
-                        .WithMany()
+                        .WithMany("Loans")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });

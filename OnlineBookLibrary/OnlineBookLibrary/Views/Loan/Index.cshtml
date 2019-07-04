@@ -22,8 +22,9 @@
         @{ 
             foreach (var loan in Model.AllLoans)
             {
+                int loanId = loan.Id + 1;
                 <tr>
-                    <td>@loan.Id</td>
+                    <td>@loanId</td>
                     <td>@loan.Book.Name</td>
                     <td>@loan.User.Email</td>
                     <td>@loan.LoanDate</td>

@@ -21,6 +21,8 @@ namespace OnlineBookLibrary.Controllers
         public IActionResult Index()
         {
             var allAuthors = new AuthorViewModel();
+            allAuthors.AllBooks = _bookService.ListAllBooks();
+            allAuthors.AllAuthors = _authorService.ListAll();
             return View(allAuthors);
         }
 

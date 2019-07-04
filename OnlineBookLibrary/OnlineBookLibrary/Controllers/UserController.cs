@@ -25,8 +25,6 @@ namespace OnlineBookLibrary.Controllers
             if (_userService.CheckIfSomeoneIsLogged())
             {
                 var foundUser = _userService.FindLoggedUser();
-                ViewBag.ActiveLoans = _loanService.ListAllLoans().Where(x => x.User == foundUser && x.Status == LoanStatusEnum.Active);
-                ViewBag.PastLoans = _loanService.ListAllLoans().Where(x => x.User == foundUser && x.Status == LoanStatusEnum.Finished);
                 return View("ShowUser", foundUser);
             }
             UserViewModel user = new UserViewModel();
@@ -44,8 +42,7 @@ namespace OnlineBookLibrary.Controllers
                 return View("LogIn", model);
             }
             foundUser.IsLogged = true;
-            ViewBag.ActiveLoans = _loanService.ListAllLoans().Where(x => x.User == foundUser && x.Status == LoanStatusEnum.Active);
-            ViewBag.PastLoans = _loanService.ListAllLoans().Where(x => x.User == foundUser && x.Status == LoanStatusEnum.Finished);
+            _userService.UpdateExisting(foundUser);
             return View(foundUser);
         }
 
@@ -54,6 +51,7 @@ namespace OnlineBookLibrary.Controllers
         {
             User user = _userService.GetUserById(id);
             user.IsLogged = false;
+            _userService.UpdateExisting(user);
             return RedirectToAction("LogIn", "User");
         }
 

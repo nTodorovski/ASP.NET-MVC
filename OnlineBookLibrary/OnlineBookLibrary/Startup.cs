@@ -43,7 +43,7 @@ namespace OnlineBookLibrary
             services.AddTransient<IAuthorService, AuthorService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddDbContext<OnlineBookLibraryDbContext>(options => options.UseSqlServer(@"Data Source=DESKTOP-QFFU788\SQLEXPRESS;Initial Catalog=OnlineBookLibraryDb;Integrated Security=True"));
+            services.AddDbContext<OnlineBookLibraryDbContext>(options => options.UseSqlServer(@"Data Source=DESKTOP-J0V3F8U\SQLEXPRESS;Initial Catalog=OnlineBookLibraryDb;Integrated Security=True"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

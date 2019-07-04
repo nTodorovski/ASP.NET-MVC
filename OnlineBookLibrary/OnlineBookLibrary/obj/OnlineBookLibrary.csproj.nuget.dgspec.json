@@ -1,0 +1,336 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\OnlineBookLibrary\\OnlineBookLibrary.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\BusinessLayer\\BusinessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\BusinessLayer\\BusinessLayer.csproj",
+        "projectName": "BusinessLayer",
+        "projectPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\Nikola\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\BusinessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nikola\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DataLayer\\DataLayer.csproj"
+              },
+              "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DtoModels\\DtoModels.csproj": {
+                "projectPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DtoModels\\DtoModels.csproj"
+              },
+              "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\ViewModels\\ViewModels.csproj": {
+                "projectPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\ViewModels\\ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DataLayer\\DataLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DataLayer\\DataLayer.csproj",
+        "projectName": "DataLayer",
+        "projectPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DataLayer\\DataLayer.csproj",
+        "packagesPath": "C:\\Users\\Nikola\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DataLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nikola\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DtoModels\\DtoModels.csproj": {
+                "projectPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DtoModels\\DtoModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DtoModels\\DtoModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DtoModels\\DtoModels.csproj",
+        "projectName": "DtoModels",
+        "projectPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DtoModels\\DtoModels.csproj",
+        "packagesPath": "C:\\Users\\Nikola\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DtoModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nikola\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\OnlineBookLibrary\\OnlineBookLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\OnlineBookLibrary\\OnlineBookLibrary.csproj",
+        "projectName": "OnlineBookLibrary",
+        "projectPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\OnlineBookLibrary\\OnlineBookLibrary.csproj",
+        "packagesPath": "C:\\Users\\Nikola\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\OnlineBookLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nikola\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\BusinessLayer\\BusinessLayer.csproj"
+              },
+              "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DataLayer\\DataLayer.csproj"
+              },
+              "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\ViewModels\\ViewModels.csproj": {
+                "projectPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\ViewModels\\ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\ViewModels\\ViewModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\ViewModels\\ViewModels.csproj",
+        "projectName": "ViewModels",
+        "projectPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\ViewModels\\ViewModels.csproj",
+        "packagesPath": "C:\\Users\\Nikola\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\ViewModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nikola\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DataLayer\\DataLayer.csproj"
+              },
+              "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DtoModels\\DtoModels.csproj": {
+                "projectPath": "C:\\Users\\Nikola\\Desktop\\ASP.NET-MVC\\OnlineBookLibrary\\DtoModels\\DtoModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

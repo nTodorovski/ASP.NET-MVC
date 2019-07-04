@@ -281,7 +281,7 @@ namespace DataLayer.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("DtoModels.User", "User")
-                        .WithMany()
+                        .WithMany("Loans")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });

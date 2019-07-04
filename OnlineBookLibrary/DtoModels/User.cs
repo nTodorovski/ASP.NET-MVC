@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DtoModels
@@ -17,12 +18,14 @@ namespace DtoModels
         public Role Role { get; set; }
         public int RoleId { get; set; }
         public bool IsLogged { get; set; }
+        public ICollection<Loan> Loans { get; set; }
 
         public User(string email, string password)
         {
             Email = email;
             Password = password;
             IsLogged = false;
+            Loans = new List<Loan>();
         }
 
         public User()
